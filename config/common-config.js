@@ -1,0 +1,5 @@
+const ANONYMOUS_ACCOUNT_PASSWORD = '123123';
+
+module.exports = {
+  ANONYMOUS_ACCOUNT_PASSWORD
+}

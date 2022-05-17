@@ -1,0 +1,26 @@
+{
+  "name": "image-hosting-server-node",
+  "version": "0.0.1",
+  "description": "一个简单图床系统后台，node实现",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./app.js"
+  },
+  "author": "taku",
+  "dependencies": {
+    "axios": "^0.27.1",
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "express": "~4.16.1",
+    "joi": "^17.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.3",
+    "multer": "^1.4.4",
+    "mysql": "^2.18.1",
+    "nodemailer": "^6.7.5",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

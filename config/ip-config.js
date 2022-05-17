@@ -1,0 +1,12 @@
+
+const BASE_IP_CONFIG = {
+  PROTOCOL:'http',
+  HOST_NAME:'127.0.0.1',
+  PORT:4000
+};
+BASE_URL = `${BASE_IP_CONFIG.PROTOCOL}://${BASE_IP_CONFIG.DEV_DOMAIN}:${BASE_IP_CONFIG.PORT}/`
+
+module.exports = {
+  BASE_IP_CONFIG,
+  BASE_URL
+};
