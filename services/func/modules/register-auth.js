@@ -19,7 +19,6 @@ module.exports =async (account_id_email, registerAuthCodeSession)=>{
     );
     return ret;
   }
-  console.log('发送成功')
   if(!registerAuthCodeSession[account_id_email]){
     registerAuthCodeSession[account_id_email] = {
       codes:[],

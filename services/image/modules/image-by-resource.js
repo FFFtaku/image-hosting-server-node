@@ -1,7 +1,7 @@
 let {
   BaseConnQuery,
   ResTemplate,
-  generateImgUrl
+  PathGenerator
 } = require('../dependence');
 
 module.exports = async (resource_unique_id, account_status) => {
@@ -16,7 +16,7 @@ module.exports = async (resource_unique_id, account_status) => {
     )
     res.forEach(element => {
     
-      element.image_path = generateImgUrl(account_status, element.image_path);
+      element.image_path = PathGenerator.generateImgUrl(account_status, element.image_path);
     });
     ret = ResTemplate.resTemplateByJson(ResTemplate.restfulStatusCode['SUCCESS'],res);
   }catch(err){

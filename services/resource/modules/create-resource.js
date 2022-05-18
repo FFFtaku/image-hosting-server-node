@@ -4,7 +4,8 @@ let {
   path,
   pathConfig,
   fs,
-  uuidv4
+  uuidv4,
+  PathGenerator
 } = require('../dependence');
 
 
@@ -23,11 +24,11 @@ module.exports = async (account_id_email, account_status, resource_name) => {
     let uuid = uuidv4();
     let resourceId = `resource-${uuid}`
 
-    let resourcePath = path.join(profilePath,resourceId);
+    // 路径拼接处理
+    let basePath = PathGenerator.getLocalBasePath(account_status);
+    let resourcePath = path.join(profilePath, resourceId);
     let absolutePath = path.join(
-      account_status === 0?
-        pathConfig['STANDARD_ACCOUNT_PATH']:
-        pathConfig['ANONYMOUS_ACCOUNT_PATH'], 
+      basePath,
       resourcePath
     );
     // 创建这个文件夹

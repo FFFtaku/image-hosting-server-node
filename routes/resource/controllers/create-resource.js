@@ -13,7 +13,7 @@ module.exports = async (req, res, next) => {
   let { account_id_email, account_status } = req.auth;
 
   try {
-    let serviceRet = await createResourceService(account_id_email, resource_name);
+    let serviceRet = await createResourceService(account_id_email, account_status, resource_name);
     res.send(serviceRet);
   } catch (E) {
     next(E);

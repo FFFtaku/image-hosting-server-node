@@ -5,6 +5,7 @@ const codeStr = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
  * @description 生成[min,max]的随机整数
  * @param {number} min 
  * @param {number} max 
+ * @author taku 
  */
 function getRandom(min, max) { // param: (Number, Number)
   // 确保 max 始终大于 min
@@ -20,6 +21,7 @@ function getRandom(min, max) { // param: (Number, Number)
 /**
  * @description 生成n位随机码
  * @param {number} length 
+ * @author taku
  */
 function getRandomCode(length = 0) {
   let codeStrLength = codeStr.length;

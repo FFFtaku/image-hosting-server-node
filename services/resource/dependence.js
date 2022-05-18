@@ -15,6 +15,7 @@ let { v4 : uuidv4 } = require('uuid');
  */
 let {BaseConnQuery} = require('../../database-model');
 let ResTemplate = require('../../utils/private/res-template');
+let PathGenerator = require('../../utils/private/path-generator');
 
 /**
  * 配置信息引入
@@ -29,5 +30,6 @@ module.exports = {
   fs,
   path,
   pathConfig,
-  uuidv4
+  uuidv4,
+  PathGenerator
 }

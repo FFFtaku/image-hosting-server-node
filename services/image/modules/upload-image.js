@@ -3,7 +3,6 @@ let {
   ResTemplate,
   path,
   fs,
-  pathConfig,
   moment,
   PathGenerator
 } = require('../dependence');

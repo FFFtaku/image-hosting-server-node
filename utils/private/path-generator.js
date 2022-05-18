@@ -6,7 +6,7 @@ let {BASE_IP_CONFIG} = require('../../config/ip-config');
 module.exports = class PathGenerator{
 
   static getLocalBasePath(accountStatus){
-    basePath = null;
+    let basePath = null;
     if(accountStatus === 0){
       basePath = pathConfig['STANDARD_ACCOUNT_PATH'];
     }else{
@@ -16,7 +16,7 @@ module.exports = class PathGenerator{
   }
 
   static generateImgUrl( accountStatus, imageRelativePath){
-    userStatusPath = null;
+    let userStatusPath = null;
     if(accountStatus === 0){
       userStatusPath = pathConfig.DEFINE_PATH_NAME['STANDARD_ACCOUNT_NAME'];
     }else{
